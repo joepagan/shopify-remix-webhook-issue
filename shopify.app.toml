@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "integration-v4"
+client_id = "8fb56f26d7c9fd20bcc65bade32d22ab"
+application_url = "https://boxed-suggests-reviews-lanka.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products, read_products, read_orders"
+
+[auth]
+redirect_urls = [
+  "https://boxed-suggests-reviews-lanka.trycloudflare.com/auth/callback",
+  "https://boxed-suggests-reviews-lanka.trycloudflare.com/auth/shopify/callback",
+  "https://boxed-suggests-reviews-lanka.trycloudflare.com/api/auth/callback",
+  "https://boxed-suggests-reviews-lanka.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "extreme-preview.myshopify.com"
