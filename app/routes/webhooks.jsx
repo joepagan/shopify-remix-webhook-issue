@@ -25,6 +25,9 @@ export const action = async ({ request }) => {
     case "PRODUCTS_UPDATE":
       console.log('PRODUCTS_UPDATE');
       break;
+    case "ORDERS_PAID":
+      console.log('ORDERS_PAID');
+      break;
     case "CUSTOMERS_DATA_REQUEST":
     case "CUSTOMERS_REDACT":
     case "SHOP_REDACT":

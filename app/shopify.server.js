@@ -24,6 +24,14 @@ const shopify = shopifyApp({
       deliveryMethod: DeliveryMethod.Http,
       callbackUrl: "/webhooks",
     },
+    PRODUCTS_UPDATE: {
+      deliveryMethod: DeliveryMethod.Http,
+      callbackUrl: "/webhooks",
+    },
+    ORDERS_PAID: {
+      deliveryMethod: DeliveryMethod.Http,
+      callbackUrl: "/webhooks",
+    },
   },
   hooks: {
     afterAuth: async ({ session }) => {
